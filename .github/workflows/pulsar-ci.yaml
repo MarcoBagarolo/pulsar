@@ -102,7 +102,7 @@ jobs:
 
       - name: checkout
         if: ${{ github.event_name == 'pull_request' }}
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Detect changed files
         if: ${{ github.event_name == 'pull_request' }}
@@ -151,7 +151,7 @@ jobs:
     if: ${{ needs.preconditions.outputs.docs_only != 'true' }}
     steps:
       - name: checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Tune Runner VM
         uses: ./.github/actions/tune-runner-vm
@@ -266,7 +266,7 @@ jobs:
 
     steps:
       - name: checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Tune Runner VM
         uses: ./.github/actions/tune-runner-vm
@@ -386,7 +386,7 @@ jobs:
 
     steps:
       - name: checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Tune Runner VM
         uses: ./.github/actions/tune-runner-vm
@@ -468,7 +468,7 @@ jobs:
       IMAGE_JDK_MAJOR_VERSION: ${{ needs.preconditions.outputs.jdk_major_version }}
     steps:
       - name: checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Tune Runner VM
         uses: ./.github/actions/tune-runner-vm
@@ -591,7 +591,7 @@ jobs:
 
     steps:
       - name: checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Tune Runner VM
         uses: ./.github/actions/tune-runner-vm
@@ -708,7 +708,7 @@ jobs:
       CI_JDK_MAJOR_VERSION: ${{ needs.preconditions.outputs.jdk_major_version }}
     steps:
       - name: checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Tune Runner VM
         uses: ./.github/actions/tune-runner-vm
@@ -795,7 +795,7 @@ jobs:
     if: ${{ needs.preconditions.outputs.docs_only != 'true' }}
     steps:
       - name: checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Tune Runner VM
         uses: ./.github/actions/tune-runner-vm
@@ -819,7 +819,7 @@ jobs:
       IMAGE_JDK_MAJOR_VERSION: ${{ needs.preconditions.outputs.jdk_major_version }}
     steps:
       - name: checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Tune Runner VM
         uses: ./.github/actions/tune-runner-vm
@@ -959,7 +959,7 @@ jobs:
 
     steps:
       - name: checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Tune Runner VM
         uses: ./.github/actions/tune-runner-vm
@@ -1075,7 +1075,7 @@ jobs:
 
     steps:
       - name: checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Tune Runner VM
         uses: ./.github/actions/tune-runner-vm
@@ -1174,7 +1174,7 @@ jobs:
 
     steps:
       - name: checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Tune Runner VM
         uses: ./.github/actions/tune-runner-vm
@@ -1283,7 +1283,7 @@ jobs:
     if: ${{ needs.preconditions.outputs.docs_only != 'true' }}
     steps:
       - name: checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Tune Runner VM
         uses: ./.github/actions/tune-runner-vm
@@ -1306,7 +1306,7 @@ jobs:
       CI_JDK_MAJOR_VERSION: ${{ needs.preconditions.outputs.jdk_major_version }}
     steps:
       - name: checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Tune Runner VM
         uses: ./.github/actions/tune-runner-vm
@@ -1342,7 +1342,7 @@ jobs:
       CI_JDK_MAJOR_VERSION: ${{ needs.preconditions.outputs.jdk_major_version }}
     steps:
       - name: checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Tune Runner VM
         uses: ./.github/actions/tune-runner-vm
@@ -1439,7 +1439,7 @@ jobs:
 
       - name: checkout
         if: ${{ needs.preconditions.outputs.docs_only != 'true' }}
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Tune Runner VM
         if: ${{ needs.preconditions.outputs.docs_only != 'true' }}
